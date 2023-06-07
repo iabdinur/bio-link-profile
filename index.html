@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+     <head>
+        <meta charset="utf-8" />
+        <title> Ibrahim Abdinur - Links</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="./index.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+        <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            VANTA.BIRDS({
+                el: "#vanta",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                backgroundAlpha: 0.0,
+                color1: 0x3cff,
+                color2: 0x7796,
+                wingSpan: 40.0,
+                separation: 100.0,
+                alignment: 60.0,
+                cohesion: 5.0,
+                quantity: 3.0,
+            })
+            setTimeout(() => {
+                const main = document.querySelector("main");
+                main.style.opacity = 1;
+                main.style.filter = "blur(0px)";
+        }, 1000)
+        })
+        </script>
+     </head>
+     <body>
+        <div id="vanta">
+        </div>
+        <main class="animated">
+            <header>
+                    <img src="./images/ibrahim.jpg" />
+                    <h1>  Ibrahim Abdinur </h1> 
+            </header>
+                     <ul>
+                         <li>
+                            <a href ="http://instagram.com/ibz.nur">
+                                <img src="./images/homepage.svg" alt="Homepage" width="20" />
+                                Official Page
+                            </a>		
+                        </li> 
+                        <li>
+                            <a href ="http://instagram.com/ibz.nur">
+                                <img src="./images/instagram.svg" alt="GitHub" width="20" />
+                                Instagram
+                            </a>		
+                        </li> 
+                        <li>
+                            <a href ="http://twitter.com/ibz_nur">
+                                <img src="./images/twitter.svg" alt="Twitter" width="20" />
+                                Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href ="http://github.com/iabdinur">
+                                <img src="./images/github.svg" alt="GitHub" width="20" />
+                                Github
+                            </a>
+                        </li>
+                    </ul>
+            </header>
+        </main>
+     </body>
+</html>
